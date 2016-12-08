@@ -88,7 +88,8 @@
 	<resource-file src="libs/mips64/libbdpush_V2_7.so" target="libs/mips64" />
 	<resource-file src="libs/x86/libbdpush_V2_7.so" target="libs/x86" />
 	<resource-file src="libs/x86_64/libbdpush_V2_7.so" target="libs/x86_64" />
-		
+        <resource-file src="libs/pushservice-5.2.0.12.jar" target="libs" />
+	    
     </platform>
 
     <!-- ios -->
