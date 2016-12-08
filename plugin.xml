@@ -28,9 +28,9 @@
         <config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.INTERNET" />
             <!-- 适配Android N系统必需的ContentProvider写权限声明，写权限包含应用包名-->
-            <uses-permission android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.phonegap.baidupush" />
+            <uses-permission android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.phonegap.ebike" />
             <permission
-                    android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.phonegap.baidupush"
+                    android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.phonegap.ebike"
                     android:protectionLevel="normal">
             </permission>
 
@@ -86,8 +86,8 @@
             <!-- 适配Android N系统必需的ContentProvider声明，写权限包含应用包名-->
             <provider
                     android:name="com.baidu.android.pushservice.PushInfoProvider"
-                    android:authorities="com.phonegap.baidupush.bdpush"
-                    android:writePermission="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.phonegap.baidupush"
+                    android:authorities="com.phonegap.ebike.bdpush"
+                    android:writePermission="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.phonegap.ebike"
                     android:protectionLevel = "signature"
                     android:exported="true">
             </provider>
