@@ -27,6 +27,13 @@
 
         <config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.INTERNET" />
+            <!-- 适配Android N系统必需的ContentProvider写权限声明，写权限包含应用包名-->
+            <uses-permission android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.phonegap.baidupush" />
+            <permission
+                    android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.phonegap.baidupush"
+                    android:protectionLevel="normal">
+            </permission>
+
             <uses-permission android:name="android.permission.READ_PHONE_STATE" />
             <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
             <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
@@ -36,6 +43,7 @@
             <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
             <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
             <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
@@ -75,6 +83,14 @@
             </service>
             <service android:name="com.baidu.android.pushservice.CommandService" android:exported="true" >
             </service>
+            <!-- 适配Android N系统必需的ContentProvider声明，写权限包含应用包名-->
+            <provider
+                    android:name="com.baidu.android.pushservice.PushInfoProvider"
+                    android:authorities="com.phonegap.baidupush.bdpush"
+                    android:writePermission="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.phonegap.baidupush"
+                    android:protectionLevel = "signature"
+                    android:exported="true">
+            </provider>
 
         </config-file>
 
