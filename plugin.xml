@@ -81,14 +81,14 @@
         <source-file src="src/android/com/samilywang/plugins/baidupush/BaiduPushPlugin.java" target-dir="src/com/samilywang/plugins/baidupush" />
         <source-file src="src/android/com/samilywang/plugins/baidupush/BaiduPushMessageReceiver.java" target-dir="src/com/samilywang/plugins/baidupush" />
 
-		<resource-file src="libs/arm64-v8a/libbdpush_V2_7.so" target="libs/arm64-v8a" />
-		<resource-file src="libs/armeabi/libbdpush_V2_7.so" target="libs/armeabi" />
-		<resource-file src="libs/armeabi-v7a/libbdpush_V2_7.so" target="libs/armeabi-v7a" />
-		<resource-file src="libs/mips/libbdpush_V2_7.so" target="libs/mips" />
-		<resource-file src="libs/mips64/libbdpush_V2_7.so" target="libs/mips64" />
-		<resource-file src="libs/x86/libbdpush_V2_7.so" target="libs/x86" />
-		<resource-file src="libs/x86_64/libbdpush_V2_7.so" target="libs/x86_64" />
-        <resource-file src="libs/pushservice-5.2.0.12.jar" target="libs" />
+		<source-file src="libs/arm64-v8a/libbdpush_V2_7.so" target-dir="libs/arm64-v8a" />
+		<source-file src="libs/armeabi/libbdpush_V2_7.so" target-dir="libs/armeabi" />
+		<source-file src="libs/armeabi-v7a/libbdpush_V2_7.so" target-dir="libs/armeabi-v7a" />
+		<source-file src="libs/mips/libbdpush_V2_7.so" target-dir="libs/mips" />
+		<source-file src="libs/mips64/libbdpush_V2_7.so" target-dir="libs/mips64" />
+		<source-file src="libs/x86/libbdpush_V2_7.so" target-dir="libs/x86" />
+		<source-file src="libs/x86_64/libbdpush_V2_7.so" target-dir="libs/x86_64" />
+        <source-file src="libs/pushservice-5.2.0.12.jar" target-dir="libs" />
 
     </platform>
 
