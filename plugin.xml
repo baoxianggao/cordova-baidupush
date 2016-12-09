@@ -104,7 +104,7 @@
 		<source-file src="libs/mips64/libbdpush_V2_7.so" target-dir="libs/mips64" />
 		<source-file src="libs/x86/libbdpush_V2_7.so" target-dir="libs/x86" />
 		<source-file src="libs/x86_64/libbdpush_V2_7.so" target-dir="libs/x86_64" />
-        <source-file src="libs/pushservice-5.2.0.12.jar" target-dir="libs" />
+        <source-file src="libs/pushservice-5.3.0.99.jar" target-dir="libs" />
 
     </platform>
 
